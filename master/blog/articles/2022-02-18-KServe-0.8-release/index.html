@@ -6,25 +6,25 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="KServe Documentation">
+        <meta name="description" content=" KServe v0.8.0 Release Blog Post">
       
       
       
-        <link rel="canonical" href="https://kserve.io/website/master/modelserving/v1beta1/torchserve/autoscaling/">
+        <link rel="canonical" href="https://kserve.io/website/master/blog/articles/2022-02-18-KServe-0.8-release/">
       
-      <link rel="icon" href="../../../../images/favicon/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.11">
+      <link rel="icon" href="../../../images/favicon/favicon-32x32.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
-        <title>Autoscaling with PyTorch InferenceService - KServe Documentation Website</title>
+        <title>Announcing: KServe v0.8 - KServe Documentation Website</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.50e68009.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -38,9 +38,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#autoscaling-with-pytorch-inferenceservice" class="md-skip">
+        <a href="#authors" class="md-skip">
           Skip to content
         </a>
       
@@ -97,9 +97,9 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="KServe Documentation Website" class="md-header__button md-logo" aria-label="KServe Documentation Website" data-md-component="logo">
+    <a href="../../.." title="KServe Documentation Website" class="md-header__button md-logo" aria-label="KServe Documentation Website" data-md-component="logo">
       
-  <img src="../../../../images/logo/kserve.png" alt="logo">
+  <img src="../../../images/logo/kserve.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Autoscaling with PyTorch InferenceService
+              Announcing: KServe v0.8
             
           </span>
         </div>
@@ -184,7 +184,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../.." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -199,7 +199,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../get_started/" class="md-tabs__link">
+      <a href="../../../get_started/" class="md-tabs__link">
         Getting started
       </a>
     </li>
@@ -220,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../admin/serverless/" class="md-tabs__link">
+      <a href="../../../admin/serverless/" class="md-tabs__link">
         Administration Guide
       </a>
     </li>
@@ -248,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../control_plane/" class="md-tabs__link">
+      <a href="../../../modelserving/control_plane/" class="md-tabs__link">
         User Guide
       </a>
     </li>
@@ -268,7 +268,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../reference/api/" class="md-tabs__link">
+      <a href="../../../reference/api/" class="md-tabs__link">
         API Reference
       </a>
     </li>
@@ -284,7 +284,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../developer/developer/" class="md-tabs__link">
+      <a href="../../../developer/developer/" class="md-tabs__link">
         Developer Guide
       </a>
     </li>
@@ -293,6 +293,8 @@
       
         
   
+  
+    
   
 
 
@@ -305,7 +307,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../blog/articles/2021-10-11-KServe-0.7-release/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Blog
       </a>
     </li>
@@ -323,7 +325,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../community/adopters/" class="md-tabs__link">
+      <a href="../../../community/adopters/" class="md-tabs__link">
         Community
       </a>
     </li>
@@ -357,9 +359,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="KServe Documentation Website" class="md-nav__button md-logo" aria-label="KServe Documentation Website" data-md-component="logo">
+    <a href="../../.." title="KServe Documentation Website" class="md-nav__button md-logo" aria-label="KServe Documentation Website" data-md-component="logo">
       
-  <img src="../../../../images/logo/kserve.png" alt="logo">
+  <img src="../../../images/logo/kserve.png" alt="logo">
 
     </a>
     KServe Documentation Website
@@ -387,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -428,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../get_started/" class="md-nav__link">
+      <a href="../../../get_started/" class="md-nav__link">
         KServe Quickstart
       </a>
     </li>
@@ -442,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../get_started/first_isvc/" class="md-nav__link">
+      <a href="../../../get_started/first_isvc/" class="md-nav__link">
         First InferenceService
       </a>
     </li>
@@ -516,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../admin/serverless/" class="md-nav__link">
+      <a href="../../../admin/serverless/" class="md-nav__link">
         Serverless installation
       </a>
     </li>
@@ -530,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../admin/modelmesh/" class="md-nav__link">
+      <a href="../../../admin/modelmesh/" class="md-nav__link">
         ModelMesh installation
       </a>
     </li>
@@ -544,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../admin/kubernetes_deployment/" class="md-nav__link">
+      <a href="../../../admin/kubernetes_deployment/" class="md-nav__link">
         Kubernetes deployment installation
       </a>
     </li>
@@ -558,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../admin/migration/" class="md-nav__link">
+      <a href="../../../admin/migration/" class="md-nav__link">
         Migrating from KFServing
       </a>
     </li>
@@ -665,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../control_plane/" class="md-nav__link">
+      <a href="../../../modelserving/control_plane/" class="md-nav__link">
         Model Serving Control Plane
       </a>
     </li>
@@ -712,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../data_plane/" class="md-nav__link">
+      <a href="../../../modelserving/data_plane/" class="md-nav__link">
         Model Serving Data Plane
       </a>
     </li>
@@ -726,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../inference_api/" class="md-nav__link">
+      <a href="../../../modelserving/inference_api/" class="md-nav__link">
         V2 Inference Protocol
       </a>
     </li>
@@ -806,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../serving_runtime/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/serving_runtime/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -820,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tensorflow/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/tensorflow/" class="md-nav__link">
         Tensorflow
       </a>
     </li>
@@ -834,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/torchserve/" class="md-nav__link">
         PyTorch
       </a>
     </li>
@@ -848,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sklearn/v2/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/sklearn/v2/" class="md-nav__link">
         Scikit-learn
       </a>
     </li>
@@ -862,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xgboost/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/xgboost/" class="md-nav__link">
         XGBoost
       </a>
     </li>
@@ -876,7 +878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pmml/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/pmml/" class="md-nav__link">
         PMML
       </a>
     </li>
@@ -890,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../spark/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/spark/" class="md-nav__link">
         Spark MLlib
       </a>
     </li>
@@ -904,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lightgbm/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/lightgbm/" class="md-nav__link">
         Lightgbm
       </a>
     </li>
@@ -918,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../paddle/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/paddle/" class="md-nav__link">
         Paddle
       </a>
     </li>
@@ -991,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../triton/torchscript/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/triton/torchscript/" class="md-nav__link">
         Torchscript
       </a>
     </li>
@@ -1005,7 +1007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../triton/bert/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/triton/bert/" class="md-nav__link">
         Tensorflow
       </a>
     </li>
@@ -1033,7 +1035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../custom/custom_model/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/custom/custom_model/" class="md-nav__link">
         How to write a custom predictor
       </a>
     </li>
@@ -1106,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mms/multi-model-serving/" class="md-nav__link">
+      <a href="../../../modelserving/mms/multi-model-serving/" class="md-nav__link">
         The Scalability Problem
       </a>
     </li>
@@ -1120,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../mms/modelmesh/overview/" class="md-nav__link">
+      <a href="../../../modelserving/mms/modelmesh/overview/" class="md-nav__link">
         ModelMesh Overview
       </a>
     </li>
@@ -1174,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../transformer/feast/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/transformer/feast/" class="md-nav__link">
         Feast
       </a>
     </li>
@@ -1188,7 +1190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../transformer/torchserve_image_transformer/" class="md-nav__link">
+      <a href="../../../modelserving/v1beta1/transformer/torchserve_image_transformer/" class="md-nav__link">
         How to write a custom transformer
       </a>
     </li>
@@ -1235,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../storage/azure/azure/" class="md-nav__link">
+      <a href="../../../modelserving/storage/azure/azure/" class="md-nav__link">
         Azure
       </a>
     </li>
@@ -1249,7 +1251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../storage/pvc/pvc/" class="md-nav__link">
+      <a href="../../../modelserving/storage/pvc/pvc/" class="md-nav__link">
         PVC
       </a>
     </li>
@@ -1263,7 +1265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../storage/s3/s3/" class="md-nav__link">
+      <a href="../../../modelserving/storage/s3/s3/" class="md-nav__link">
         S3
       </a>
     </li>
@@ -1277,7 +1279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../storage/uri/uri/" class="md-nav__link">
+      <a href="../../../modelserving/storage/uri/uri/" class="md-nav__link">
         URI
       </a>
     </li>
@@ -1324,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../explainer/explainer/" class="md-nav__link">
+      <a href="../../../modelserving/explainer/explainer/" class="md-nav__link">
         Concept
       </a>
     </li>
@@ -1364,7 +1366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../explainer/alibi/cifar10/" class="md-nav__link">
+      <a href="../../../modelserving/explainer/alibi/cifar10/" class="md-nav__link">
         Image Explainer
       </a>
     </li>
@@ -1378,7 +1380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../explainer/alibi/income/" class="md-nav__link">
+      <a href="../../../modelserving/explainer/alibi/income/" class="md-nav__link">
         Income Explainer
       </a>
     </li>
@@ -1392,7 +1394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../explainer/alibi/moviesentiment/" class="md-nav__link">
+      <a href="../../../modelserving/explainer/alibi/moviesentiment/" class="md-nav__link">
         Text Explainer
       </a>
     </li>
@@ -1413,7 +1415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../explainer/aix/mnist/aix/" class="md-nav__link">
+      <a href="../../../modelserving/explainer/aix/mnist/aix/" class="md-nav__link">
         AIX Explainer
       </a>
     </li>
@@ -1460,7 +1462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../detect/alibi_detect/alibi_detect/" class="md-nav__link">
+      <a href="../../../modelserving/detect/alibi_detect/alibi_detect/" class="md-nav__link">
         Alibi Detector
       </a>
     </li>
@@ -1474,7 +1476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../detect/aif/germancredit/" class="md-nav__link">
+      <a href="../../../modelserving/detect/aif/germancredit/" class="md-nav__link">
         AIF Bias Detector
       </a>
     </li>
@@ -1488,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../detect/art/mnist/" class="md-nav__link">
+      <a href="../../../modelserving/detect/art/mnist/" class="md-nav__link">
         ART Adversial Detector
       </a>
     </li>
@@ -1535,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../batcher/batcher/" class="md-nav__link">
+      <a href="../../../modelserving/batcher/batcher/" class="md-nav__link">
         Inference Batcher
       </a>
     </li>
@@ -1582,7 +1584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../logger/logger/" class="md-nav__link">
+      <a href="../../../modelserving/logger/logger/" class="md-nav__link">
         Inference Logger
       </a>
     </li>
@@ -1629,7 +1631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../autoscaling/autoscaling/" class="md-nav__link">
+      <a href="../../../modelserving/autoscaling/autoscaling/" class="md-nav__link">
         Inference Autoscaling
       </a>
     </li>
@@ -1676,7 +1678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nodescheduling/overview/" class="md-nav__link">
+      <a href="../../../modelserving/nodescheduling/overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1690,7 +1692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nodescheduling/inferenceservicenodescheduling/" class="md-nav__link">
+      <a href="../../../modelserving/nodescheduling/inferenceservicenodescheduling/" class="md-nav__link">
         InferenceService Node Scheduling
       </a>
     </li>
@@ -1737,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../kafka/kafka/" class="md-nav__link">
+      <a href="../../../modelserving/kafka/kafka/" class="md-nav__link">
         Inference Kafka
       </a>
     </li>
@@ -1792,7 +1794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../reference/api/" class="md-nav__link">
+      <a href="../../../reference/api/" class="md-nav__link">
         Control Plane API
       </a>
     </li>
@@ -1806,7 +1808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../sdk_docs/sdk_doc/" class="md-nav__link">
+      <a href="../../../sdk_docs/sdk_doc/" class="md-nav__link">
         Python Client SDK
       </a>
     </li>
@@ -1854,7 +1856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../developer/developer/" class="md-nav__link">
+      <a href="../../../developer/developer/" class="md-nav__link">
         How to contribute
       </a>
     </li>
@@ -1868,7 +1870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../developer/debug/" class="md-nav__link">
+      <a href="../../../developer/debug/" class="md-nav__link">
         Debugging guide
       </a>
     </li>
@@ -1888,12 +1890,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
       
       
@@ -1914,12 +1918,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" checked>
       
       
       
@@ -1940,9 +1946,109 @@
               
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          KServe 0.8 Release
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        KServe 0.8 Release
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#announcing-kserve-v08" class="md-nav__link">
+    Announcing: KServe v0.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-changed" class="md-nav__link">
+    What’s changed?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-new" class="md-nav__link">
+    What's new?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servingruntimes-and-clusterservingruntimes" class="md-nav__link">
+    ServingRuntimes and ClusterServingRuntimes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updated-inferenceservice-predictor-spec" class="md-nav__link">
+    Updated InferenceService Predictor Spec
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelmesh-updates" class="md-nav__link">
+    ModelMesh Updates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#join-the-community" class="md-nav__link">
+    Join the community
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
   
     <li class="md-nav__item">
-      <a href="../../../../blog/articles/2021-10-11-KServe-0.7-release/" class="md-nav__link">
+      <a href="../2021-10-11-KServe-0.7-release/" class="md-nav__link">
         KServe 0.7 Release
       </a>
     </li>
@@ -1989,7 +2095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/articles/2021-09-27-kfserving-transition/" class="md-nav__link">
+      <a href="../2021-09-27-kfserving-transition/" class="md-nav__link">
         KFserving Transition
       </a>
     </li>
@@ -2044,7 +2150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../community/adopters/" class="md-nav__link">
+      <a href="../../../community/adopters/" class="md-nav__link">
         Adopters
       </a>
     </li>
@@ -2058,7 +2164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../community/presentations/" class="md-nav__link">
+      <a href="../../../community/presentations/" class="md-nav__link">
         Demos and Presentations
       </a>
     </li>
@@ -2089,8 +2195,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2099,63 +2203,58 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#knative-autoscaler" class="md-nav__link">
-    Knative Autoscaler
+  <a href="#authors" class="md-nav__link">
+    Authors
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-inferenceservice-with-concurrency-target" class="md-nav__link">
-    Create InferenceService with concurrency target
+  <a href="#announcing-kserve-v08" class="md-nav__link">
+    Announcing: KServe v0.8
   </a>
-  
-    <nav class="md-nav" aria-label="Create InferenceService with concurrency target">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#soft-limit" class="md-nav__link">
-    Soft limit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hard-limit" class="md-nav__link">
-    Hard limit
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-the-inferenceservice" class="md-nav__link">
-    Create the InferenceService
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-inference-with-concurrent-requests" class="md-nav__link">
-    Run inference with concurrent requests
-  </a>
-  
-    <nav class="md-nav" aria-label="Run inference with concurrent requests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#check-the-pods-that-are-scaled-up" class="md-nav__link">
-    Check the pods that are scaled up
+  <a href="#whats-changed" class="md-nav__link">
+    What’s changed?
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#whats-new" class="md-nav__link">
+    What's new?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servingruntimes-and-clusterservingruntimes" class="md-nav__link">
+    ServingRuntimes and ClusterServingRuntimes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updated-inferenceservice-predictor-spec" class="md-nav__link">
+    Updated InferenceService Predictor Spec
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelmesh-updates" class="md-nav__link">
+    ModelMesh Updates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#join-the-community" class="md-nav__link">
+    Join the community
+  </a>
   
 </li>
       
@@ -2171,129 +2270,132 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/kserve/website/edit/mkdocs/docs/modelserving/v1beta1/torchserve/autoscaling/README.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/kserve/website/edit/mkdocs/docs/blog/articles/2022-02-18-KServe-0.8-release.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="autoscaling-with-pytorch-inferenceservice">Autoscaling with PyTorch InferenceService<a class="headerlink" href="#autoscaling-with-pytorch-inferenceservice" title="Permanent link">&para;</a></h1>
-<h2 id="knative-autoscaler">Knative Autoscaler<a class="headerlink" href="#knative-autoscaler" title="Permanent link">&para;</a></h2>
-<p>KServe supports the implementation of <strong>Knative Pod Autoscaler (KPA)</strong> and <strong>Kubernetes’ Horizontal Pod Autoscaler (HPA)</strong>.
-The features and limitations of each of these Autoscalers are listed below.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you want to use Kubernetes Horizontal Pod Autoscaler (HPA), you must install <a href="https://knative.dev/docs/install/any-kubernetes-cluster/#optional-serving-extensions">HPA extension</a></p>
-</div>
-<p>Knative Pod Autoscaler (KPA)</p>
+
+  <h1>KServe 0.8 Release</h1>
+
+<h3 id="authors">Authors<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h3>
+<p><strong>Dan Sun</strong>, <strong>Paul Van Eck</strong>, <strong>Vedant Padwal</strong>, <strong>Andrews Arokiam</strong> on behalf of the KServe Working Group.</p>
+<h3 id="announcing-kserve-v08"><strong>Announcing: KServe v0.8</strong><a class="headerlink" href="#announcing-kserve-v08" title="Permanent link">&para;</a></h3>
+<p><em>February 18, 2022</em></p>
+<p>Today, we are pleased to announce the v0.8.0 release of KServe! While the last release was focused on the
+<a href="https://blog.kubeflow.org/release/official/2021/09/27/kfserving-transition.html">transition</a> of KFServing to KServe,
+this release was focused on unifying the InferenceService API for deploying models on KServe and ModelMesh.</p>
+<blockquote>
+<p><strong>Note</strong>: For current users of KFServing/KServe, please take a few minutes to answer this <a href="https://kserve-survey.com/">short survey</a> and provide your feedback!</p>
+</blockquote>
+<p>Now, let's take a look at some of the changes and additions to KServe.</p>
+<h3 id="whats-changed"><strong><img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /> What’s changed?</strong><a class="headerlink" href="#whats-changed" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Part of the Knative Serving core and enabled by default once Knative Serving is installed.</li>
-<li>Supports scale to zero functionality.</li>
-<li>Does not support CPU-based autoscaling.</li>
+<li><strong>ONNX Runtime Server</strong> has been removed from the supported serving runtime list. KServe by default now uses the <strong>Triton Inference Server</strong> to serve ONNX models.</li>
+<li>KServe’s <strong>PyTorchServer</strong> has been removed from the supported serving runtime list. KServe by default now uses <strong>TorchServe</strong> to serve PyTorch models.</li>
+<li>A few main KServe SDK class names have been changed:<ul>
+<li><strong>KFModel</strong> is renamed to <strong>Model</strong></li>
+<li><strong>KFServer</strong> is renamed to <strong>ModelServer</strong></li>
+<li><strong>KFModelRepository</strong> is renamed to <strong>ModelRepository</strong></li>
 </ul>
-<p>Horizontal Pod Autoscaler (HPA)</p>
+</li>
+</ul>
+<h3 id="whats-new"><strong><img alt="🌈" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f308.svg" title=":rainbow:" /> What's new?</strong><a class="headerlink" href="#whats-new" title="Permanent link">&para;</a></h3>
+<p>Some notable updates are:</p>
 <ul>
-<li>Not part of the Knative Serving core, and must be enabled after Knative Serving installation.</li>
-<li>Does not support scale to zero functionality.</li>
-<li>Supports CPU-based autoscaling.</li>
+<li><strong>ClusterServingRuntime</strong> and <strong>ServingRuntime</strong> CRDs are introduced. Learn more <a href="#servingruntimes-and-clusterservingruntimes">below</a>.</li>
+<li>A new <strong>Model Spec</strong> was introduced to the InferenceService Predictor Spec as a new way to specify models. Learn more <a href="#updated-inferenceservice-predictor-spec">below</a>.</li>
+<li><strong>Knative 1.0</strong> is now supported and certified for the KServe Serverless installation.</li>
+<li><strong>gRPC</strong> is now supported for transformer to predictor network communication.</li>
+<li><strong>TorchServe</strong> Serving runtime has been updated to 0.5.2 which now supports the KServe V2 REST protocol.</li>
+<li><strong>ModelMesh</strong> now has multi-namespace support, and users can now deploy GCS or HTTP(S) hosted models.</li>
 </ul>
-<h2 id="create-inferenceservice-with-concurrency-target">Create InferenceService with concurrency target<a class="headerlink" href="#create-inferenceservice-with-concurrency-target" title="Permanent link">&para;</a></h2>
-<h3 id="soft-limit">Soft limit<a class="headerlink" href="#soft-limit" title="Permanent link">&para;</a></h3>
-<p>You can configure InferenceService with annotation <code>autoscaling.knative.dev/target</code> for a soft limit. The soft limit is a targeted limit rather than
-a strictly enforced bound, particularly if there is a sudden burst of requests, this value can be exceeded.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Old Schema</label><label for="__tabbed_1_2">New Schema</label></div>
+<p>To see all release updates, check out the KServe <a href="https://github.com/kserve/kserve/releases/tag/v0.8.0">release notes</a> and ModelMesh Serving <a href="https://github.com/kserve/modelmesh-serving/releases/tag/v0.8.0">release notes</a>!</p>
+<h3 id="servingruntimes-and-clusterservingruntimes"><strong>ServingRuntimes and ClusterServingRuntimes</strong><a class="headerlink" href="#servingruntimes-and-clusterservingruntimes" title="Permanent link">&para;</a></h3>
+<p>This release introduces two new CRDs <em>ServingRuntimes</em> and <em>ClusterServingRuntimes</em> with the only difference between these two is that one is
+namespace-scoped and one is cluster-scoped. A ServingRuntime defines the templates for Pods that can serve one or more particular model formats.
+Each ServingRuntime defines key information such as the container image of the runtime and a list of the model formats that the runtime supports.</p>
+<p>In previous versions of KServe, supported predictor formats and container images were defined in a
+<a href="https://github.com/kserve/kserve/blob/release-0.7/config/configmap/inferenceservice.yaml#L7">config map</a> in the control plane namespace.
+The ServingRuntime CRD should allow for improved flexibility and extensibility for defining or customizing runtimes to how you see fit without having to modify
+any controller code or any resources in the controller namespace.</p>
+<p>Several out-of-the-box ClusterServingRuntimes are provided with KServe so that users can continue to use KServe how they did before without having to define the runtimes themselves.</p>
+<p><strong>Example SKLearn ClusterServingRuntime:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">serving.kserve.io/v1alpha1</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterServingRuntime</span><span class="w"></span>
+<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kserve-sklearnserver</span><span class="w"></span>
+<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">supportedModelFormats</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sklearn</span><span class="w"></span>
+<span class="w">      </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="nt">autoSelect</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">  </span><span class="nt">containers</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kserve-container</span><span class="w"></span>
+<span class="w">      </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kserve/sklearnserver:latest</span><span class="w"></span>
+<span class="w">      </span><span class="nt">args</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--model_name={{.Name}}</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--model_dir=/mnt/models</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--http_port=8080</span><span class="w"></span>
+<span class="w">      </span><span class="nt">resources</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">requests</span><span class="p">:</span><span class="w"></span>
+<span class="w">          </span><span class="nt">cpu</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="nt">memory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2Gi</span><span class="w"></span>
+<span class="w">        </span><span class="nt">limits</span><span class="p">:</span><span class="w"></span>
+<span class="w">          </span><span class="nt">cpu</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="nt">memory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2Gi</span><span class="w"></span>
+</code></pre></div>
+<h3 id="updated-inferenceservice-predictor-spec"><strong>Updated InferenceService Predictor Spec</strong><a class="headerlink" href="#updated-inferenceservice-predictor-spec" title="Permanent link">&para;</a></h3>
+<p>A new Model spec was also introduced as a part of the Predictor spec for InferenceServices. One of the problems KServe was having was that the InferenceService CRD was
+becoming unwieldy with each model serving runtime being an object in the Predictor spec. This generated a lot of field duplication in the schema,
+bloating the overall size of the CRD. If a user wanted to introduce a new model serving framework for KServe to support, the CRD would have to be modified,
+and subsequently the controller code.</p>
+<p>Now, with the Model spec, a user can specify a model format and optionally a corresponding version. The KServe control plane will automatically select and use the
+<em>ClusterServingRuntime</em> or <em>ServingRuntime</em> that supports the given format. Each <em>ServingRuntime</em> maintains a list of supported model formats and versions. If a format has
+<code>autoselect</code> as <code>true</code>, then that opens the <em>ServingRuntime</em> up for automatic model placement for that model format.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">New Schema</label><label for="__tabbed_1_2">Previous Schema</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;serving.kserve.io/v1beta1&quot;</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;InferenceService&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">serving.kserve.io/v1beta1</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">InferenceService</span><span class="w"></span>
 <span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;torchserve&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">annotations</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">autoscaling.knative.dev/target</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10&quot;</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">predictor</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">pytorch</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gs://kfserving-examples/models/torchserve/image_classifier/v1&quot;</span><span class="w"></span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;serving.kserve.io/v1beta1&quot;</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;InferenceService&quot;</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;torchserve&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">annotations</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">autoscaling.knative.dev/target</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-sklearn-isvc</span><span class="w"></span>
 <span class="nt">spec</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">predictor</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="nt">modelFormat</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pytorch</span><span class="w"></span>
-<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gs://kfserving-examples/models/torchserve/image_classifier/v1&quot;</span><span class="w"></span>
-</code></pre></div>
-</div>
-</div>
-</div>
-<h3 id="hard-limit">Hard limit<a class="headerlink" href="#hard-limit" title="Permanent link">&para;</a></h3>
-<p>You can also configure InferenceService with field <code>containerConcurrency</code> for a hard limit. The hard limit is an enforced upper bound. 
-If concurrency reaches the hard limit, surplus requests will be buffered and must wait until enough capacity is free to execute the requests.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Old Schema</label><label for="__tabbed_2_2">New Schema</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;serving.kserve.io/v1beta1&quot;</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;InferenceService&quot;</span><span class="w"></span>
-<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;torchserve&quot;</span><span class="w"></span>
-<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">predictor</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">containerConcurrency</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"></span>
-<span class="w">    </span><span class="nt">pytorch</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gs://kfserving-examples/models/torchserve/image_classifier/v1&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sklearn</span><span class="w"></span>
+<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">s3://bucket/sklearn/mnist.joblib</span><span class="w"></span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;serving.kserve.io/v1beta1&quot;</span><span class="w"></span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;InferenceService&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">serving.kserve.io/v1beta1</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">InferenceService</span><span class="w"></span>
 <span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;torchserve&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example-sklearn-isvc</span><span class="w"></span>
 <span class="nt">spec</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">predictor</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">containerConcurrency</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"></span>
-<span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">modelFormat</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pytorch</span><span class="w"></span>
-<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gs://kfserving-examples/models/torchserve/image_classifier/v1&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">sklearn</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">s3://bucket/sklearn/mnist.joblib</span><span class="w"></span>
 </code></pre></div>
 </div>
 </div>
 </div>
-<h3 id="create-the-inferenceservice">Create the InferenceService<a class="headerlink" href="#create-the-inferenceservice" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>kubectl apply -f autoscaling.yaml
-</code></pre></div>
-<p>Expected Output</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$inferenceservice</span>.serving.kserve.io/torchserve created
-</code></pre></div>
-<h2 id="run-inference-with-concurrent-requests">Run inference with concurrent requests<a class="headerlink" href="#run-inference-with-concurrent-requests" title="Permanent link">&para;</a></h2>
-<p>The first step is to <a href="../../../../get_started/first_isvc/#3-determine-the-ingress-ip-and-ports">determine the ingress IP and ports</a> and set <code>INGRESS_HOST</code> and <code>INGRESS_PORT</code></p>
-<p>Install hey load generator 
-<div class="highlight"><pre><span></span><code>go get -u github.com/rakyll/hey
-</code></pre></div></p>
-<p>Send concurrent inference requests
-<div class="highlight"><pre><span></span><code><span class="nv">MODEL_NAME</span><span class="o">=</span>mnist
-<span class="nv">SERVICE_HOSTNAME</span><span class="o">=</span><span class="k">$(</span>kubectl get inferenceservice torchserve -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.url}&#39;</span> <span class="p">|</span> cut -d <span class="s2">&quot;/&quot;</span> -f <span class="m">3</span><span class="k">)</span>
-
-hey -m POST -z 30s -D ../mnist.json -host <span class="si">${</span><span class="nv">SERVICE_HOSTNAME</span><span class="si">}</span> http://<span class="si">${</span><span class="nv">INGRESS_HOST</span><span class="si">}</span>:<span class="si">${</span><span class="nv">INGRESS_PORT</span><span class="si">}</span>/v1/models/<span class="si">${</span><span class="nv">MODEL_NAME</span><span class="si">}</span>:predict
-</code></pre></div></p>
-<h3 id="check-the-pods-that-are-scaled-up">Check the pods that are scaled up<a class="headerlink" href="#check-the-pods-that-are-scaled-up" title="Permanent link">&para;</a></h3>
-<p><code>hey</code> by default generates 50 requests concurrently, so you can see that the InferenceService scales to 5 pods as the container concurrency target is 10.</p>
-<div class="highlight"><pre><span></span><code>kubectl get pods -n kserve-test 
-
-NAME                                                             READY   STATUS        RESTARTS   AGE
-torchserve-predictor-default-cj2d8-deployment-69444c9c74-67qwb   <span class="m">2</span>/2     Terminating   <span class="m">0</span>          103s
-torchserve-predictor-default-cj2d8-deployment-69444c9c74-nnxk8   <span class="m">2</span>/2     Terminating   <span class="m">0</span>          95s
-torchserve-predictor-default-cj2d8-deployment-69444c9c74-rq8jq   <span class="m">2</span>/2     Running       <span class="m">0</span>          50m
-torchserve-predictor-default-cj2d8-deployment-69444c9c74-tsrwr   <span class="m">2</span>/2     Running       <span class="m">0</span>          113s
-torchserve-predictor-default-cj2d8-deployment-69444c9c74-vvpjl   <span class="m">2</span>/2     Running       <span class="m">0</span>          109s
-torchserve-predictor-default-cj2d8-deployment-69444c9c74-xvn7t   <span class="m">2</span>/2     Terminating   <span class="m">0</span>          103s
-</code></pre></div>
+<p>The previous way of defining predictors is still supported, however, the new approach will be the preferred one going forward. Eventually, the previous schema, with the framework names as keys in the predictor spec, will be removed.</p>
+<h3 id="modelmesh-updates"><strong>ModelMesh Updates</strong><a class="headerlink" href="#modelmesh-updates" title="Permanent link">&para;</a></h3>
+<p><a href="https://developer.ibm.com/blogs/kserve-and-watson-modelmesh-extreme-scale-model-inferencing-for-trusted-ai/">ModelMesh</a> has been in the process of integrating as KServe’s
+multi-model serving backend.  With the inclusion of the aforementioned ServingRuntime CRDs and the Predictor Model spec, the two projects are now much more aligned,
+with continual improvements underway.</p>
+<p>ModelMesh now supports multi-namespace reconciliation. Previously, the ModelMesh controller would only reconcile against resources deployed in the same namespace as the controller. Now, by default, ModelMesh will be able to handle InferenceService deployments in any "modelmesh-enabled" namespace. Learn more <a href="https://github.com/kserve/modelmesh-serving/blob/release-0.8/docs/install/install-script.md#setup-additional-namespaces">here</a>.</p>
+<p>Also, while ModelMesh previously only supported S3-based storage, we are happy to share that ModelMesh now works with models hosted using GCS and HTTP(S).</p>
+<h3 id="join-the-community"><strong>Join the community</strong><a class="headerlink" href="#join-the-community" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Visit our <a href="https://kserve.github.io/website/">Website</a> or <a href="https://github.com/kserve">GitHub</a></li>
+<li>Join the Slack (<a href="(https://kubeflow.slack.com/join/shared_invite/zt-n73pfj05-l206djXlXk5qdQKs4o1Zkg#/)">#kubeflow-kfserving</a>)</li>
+<li>Attend a <a href="https://docs.google.com/document/d/1KZUURwr9MnHXqHA08TFbfVbM8EAJSJjmaMhnvstvi-k/edit#heading=h.4i9fb8ndp9vp">biweekly community meeting on Wednesday 9am PST</a></li>
+<li>View our <a href="https://github.com/kserve/website/blob/main/docs/developer/developer.md">developer</a> and <a href="https://github.com/kserve/website/blob/main/docs/help/contributor/mkdocs-contributor-guide.md">doc</a> contribution guides to learn how to make contributions. We are excited to work with you to make KServe better and promote its adoption!</li>
+</ul>
+<p>Thank you for trying out KServe!</p>
 
               
             </article>
@@ -2308,6 +2410,41 @@ torchserve-predictor-default-cj2d8-deployment-69444c9c74-xvn7t   <span class="m"
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../../developer/debug/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Debugging guide" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Debugging guide
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../2021-10-11-KServe-0.7-release/" class="md-footer__link md-footer__link--next" aria-label="Next: KServe 0.7 Release" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              KServe 0.7 Release
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2349,10 +2486,10 @@ torchserve-predictor-default-cj2d8-deployment-69444c9c74-xvn7t   <span class="m"
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../../assets/javascripts/workers/search.092fa1f6.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.5a9542cf.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8aa65030.min.js"></script>
       
     
   </body>
